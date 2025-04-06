@@ -8,7 +8,6 @@ import joblib
 # Load dataset from openml
 data = fetch_openml(name="boston", version=1, as_frame=True)
 df = data.frame
-print(df.head())
 
 # Features and target
 X = df.drop(columns=["MEDV"])
@@ -29,4 +28,3 @@ X_test.to_csv("data.csv", index=False)
 
 print("✅ Model trained and saved as 'linear_model.pkl'")
 print("✅ Sample data saved as 'data.csv'")
-
