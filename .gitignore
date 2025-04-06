@@ -1,0 +1,15 @@
+# Maven
+target/
+
+# Python
+__pycache__/
+*.pyc
+*.pkl
+*.joblib
+
+# IDEs
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
